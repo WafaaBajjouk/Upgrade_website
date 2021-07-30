@@ -1,0 +1,173 @@
+
+
+/*------------------------------------------------- */
+/* =  Footer */
+/*------------------------------------------------- */
+
+footer {
+    background: #222222;
+    .up-footer {
+        padding: 100px 0 70px;
+
+        ul {
+            @extend .reset-elem;
+        }
+
+        .footer-widget {
+            margin-bottom: 30px;
+
+            > h2 {
+                color: #ffffff;
+                font-family: $font-default;
+                margin-bottom: 35px;
+                text-transform: capitalize;
+            }
+            > h2 {
+                span {
+                    display: inline-block;
+                    color: $primary-color;
+                }
+            }
+        }
+
+        .text-widget {
+            img {
+                max-width: 100%;
+                margin-bottom: 40px;
+            }
+
+            p {
+                font-family: $font-default2;
+                font-size: 14px;
+                margin-bottom: 5px;
+            }
+
+            > span {
+                display: block;
+                color: $text-color;
+                font-size: 14px;
+                font-family: $font-default2;
+                line-height: 24px;
+                margin: 0;
+            }
+        }
+        ul.social-icons {
+            margin-top: 30px;
+        }
+        ul.social-icons li {
+            display: inline-block;
+            margin-right: 5px;
+
+            a {
+                width: 40px;
+                height: 40px;
+
+                @include border-radius(50%);
+
+                border: 2px solid #555555;
+                text-align: center;
+                line-height: 36px;
+                font-size: 14px;
+                color: #555555;
+            }
+
+            a:hover {
+                border: 2px solid transparent;
+                background: $primary-color;
+                color: $title-color;
+            }
+        }
+
+        .posts-widget {
+            ul li {
+                display: block;
+                margin-bottom: 20px;
+
+                h2 {
+                    font-size: 14px;
+                    font-weight: 400;
+                    font-family: $font-default2;
+                    margin: 0;
+
+                    a {
+                        color: $text-color;
+                    }
+
+                    a:hover {
+                        color: $primary-color;
+                    }
+                }
+
+                > a {
+                    color: #666666;
+                    font-size: 12px;
+                    font-family: $font-default2;
+                    margin: 0;
+                }
+
+                > a:hover {
+                    opacity: 0.7;
+                }
+            }
+        }
+
+        .instagram-widget {
+            ul {
+                li {
+                    display: inline-block;
+                    margin-right: 12px;
+                    margin-bottom: 15px;
+
+                    a img {
+                        max-width: 72px;
+                    }
+
+                    a:hover {
+                        opacity: 0.7;
+                    }
+                }
+            }
+        }
+
+        .newsletter-widget {
+            p {
+                font-family: $font-default2;
+                margin-bottom: 20px;
+            }
+            form {
+                margin: 0;
+                input[type="text"] {
+                    outline: none;
+                    color: $text-color;
+                    font-size: 13px;
+                    font-family: $font-default2;
+                    background: #ffffff;
+                    padding: 12px 20px;
+                    width: 100%;
+                    margin: 0;
+                    border: none;
+                }
+                input[type="submit"] {
+                    border: none;
+                    outline: none;
+                    background: $second-color;
+                    color: #ffffff;
+                    font-size: 13px;
+                    font-family: $font-default2;
+                    padding: 12px 26px;
+                    float: right;
+                    margin-top: -42px;
+                    position: relative;
+                    z-index: 2;
+                }
+            }
+        }
+    }
+
+    p.copyright {
+        padding: 35px 0;
+        text-align: center;
+        margin: 0;
+        background: #1e1e1e;
+    }
+}

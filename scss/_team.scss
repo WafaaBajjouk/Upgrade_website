@@ -1,0 +1,50 @@
+
+/*------------------------------------------------- */
+/* =  team section */
+/*------------------------------------------------- */
+
+section.team-section {
+	padding: 100px 0 70px;
+	.team-post {
+		margin-bottom: 30px;
+		img {
+			width: 100%;
+			height: auto;
+			@include border-radius(2px);
+			margin-bottom: 25px;
+		}
+		h2 {
+			padding-bottom: 15px;
+			margin-bottom: 15px;
+			position: relative;
+		}
+		h2:after {
+			content: '';
+			width: 30px;
+			height: 2px;
+			left: 0;
+			bottom: -1px;
+			position: absolute;
+			background: $primary-color;
+		}
+		span {
+			display: inline-block;
+			@extend .paragraph;
+		}
+		ul.social-list {
+			@extend .reset-elem;
+			li {
+				display: inline-block;
+				margin-right: 12px;
+				a {
+					font-size: 18px;
+					color: #aaaaaa;
+				}
+				a:hover {
+					color: $title-color;
+				}
+			}
+		}
+	}
+	
+}

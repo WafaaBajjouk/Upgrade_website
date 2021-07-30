@@ -1,0 +1,123 @@
+
+/*------------------------------------------------- */
+/* =  portfolio section */
+/*------------------------------------------------- */
+
+section.portfolio-section {
+	padding: 96px 0;
+	ul.filter {
+		@extend .reset-elem;
+		margin-bottom: 45px;
+		text-align: center;
+		li {
+			display: inline-block;
+			margin: 0 8px;
+			a {
+				color: $second-color;
+				font-size: 15px;
+				font-family: $font-default2;
+				font-weight: 600;
+				text-transform: uppercase;
+			}
+			a:hover,
+			a.active {
+				color: $primary-color;
+			}
+		}
+	}
+	.portfolio-box.iso-call {
+		margin-left: -15px;
+		margin-right: -15px;
+		margin-bottom: -30px;
+		.project-post {
+			margin: 15px;
+			width: 360px;
+		}
+	}
+	.portfolio-box {
+		overflow: hidden;
+		margin-bottom: 30px;
+		.project-post {
+			padding-bottom: 20px;
+			float: left;
+			width: 25%;
+			position: relative;
+			img {
+				width: 100%;
+				height: auto;
+			}
+			.project-content {
+				text-align: center;
+				padding: 25px 10px;
+				position: relative;
+				z-index: 3;
+				h2 {
+					margin-bottom: 10px;
+					a {
+						color: $second-color;
+					}
+					a:hover {
+						color: $primary-color;
+					}
+				}
+				span {
+					display: block;
+					margin: 0;
+					color: $text-color;
+					font-size: 13px;
+					font-family: $font-alternative;
+					line-height: 20px;
+				}
+			}
+			.hover-box {
+				position: absolute;
+				top: 20px;
+				left: 20px;
+				right: 20px;
+				bottom: 20px;
+				border: 1px solid #e1e1e1;
+				z-index: 2;
+				opacity: 0;
+				a.zoom {
+					position: absolute;
+					top: 50%;
+					margin-top: -100px;
+					left: 50%;
+					margin-left: -30px;
+					width: 60px;
+					height: 60px;
+					@include border-radius(50%);
+					color: #fff;
+					font-size: 18px;
+					line-height: 60px;
+					text-align: center;
+					background: $second-color;
+				}
+				a.zoom:hover {
+					background: $primary-color;
+					color: #fff;
+				}
+			}
+		}
+		.project-post:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			background: rgba(255,255,255,0.95);
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			@include transition(0.2s);
+		}
+		.project-post:hover:before {
+			opacity: 1;
+		}
+		.project-post:hover {
+			.hover-box {
+				opacity: 1;
+			}
+		}
+	}
+}
+

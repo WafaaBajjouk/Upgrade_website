@@ -1,0 +1,222 @@
+
+/*------------------------------------------------- */
+/* =  Header
+ *------------------------------------------------- */
+
+.navbar-default {
+    background: #fff;
+    border: none;
+    @include transition(0.2s);
+    margin: 0;
+}
+
+.navbar-header {
+    z-index: 99;
+    position: relative;
+}
+
+.navbar-brand {
+    height: auto;
+    @include transition(0.2s);
+    padding: 32px 15px;
+    z-index: 99999;
+}
+
+.navbar-nav {
+    @include transition(0.2s);
+    > li > a {
+        color: $title-color !important;
+        font-size: 15px;
+        font-family: $font-default;
+        font-weight: 700;
+        text-transform: uppercase;
+        @include transition(0.2s);
+        padding: 36px 15px 32px;
+    }
+    > li > a:hover,
+    > li > a.active {
+        color: $second-color !important;
+    }
+    li.drop {
+        position: relative;
+    }
+    li:hover {
+        ul.drop-down {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    li.search {
+        position: inherit;
+    }
+}
+
+.top-line {
+    background: $second-color;
+    .inner-top-line {
+        @include transition(0.2s);
+        padding: 12px 0;
+        overflow: hidden;
+        @include transition(0.2s);
+    }
+    ul.info-list {
+        @extend .reset-elem;
+        li {
+            display: inline-block;
+            margin-right: 25px;
+            margin-bottom: 0;
+            color: #fff;
+            font-size: 15px;
+            line-height: 41px;
+            font-weight: 600;
+            font-family: $font-default;
+            i {
+                font-size: 14px;
+                margin-right: 7px;
+                color: $primary-color;
+            }
+            span {
+                font-weight: 700;
+            }
+        }
+    }
+    ul.social-icons {
+        @extend .reset-elem;
+        padding: 10px 0;
+        float: right;
+        li {
+            display: inline-block;
+            margin-left: 12px;
+            a {
+                color: #fff;
+                font-size: 15px;
+            }
+            a:hover {
+                color: $primary-color;
+            }
+        }
+    }
+    a.button-one {
+        float: right;
+    }
+    /*ul.social-icons {
+        @extend .reset-elem;
+        text-align: right;
+        li {
+            display: inline-block;
+            margin-left: 9px;
+            a {
+                font-size: 14px;
+                color: $third-color;
+            }
+            a:hover {
+                color: $primary-color;
+            }
+        }
+    }*/
+}
+
+header.active {
+    .top-line {
+        .inner-top-line {
+            height: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+    }
+}
+
+.navbar-collapse {
+    position: relative;
+}
+
+ul.drop-down {
+    @extend .reset-elem;
+    position: absolute;
+    width: 230px;
+    top: 100%;
+    left: 0;
+    visibility: hidden;
+    padding: 10px 0;
+    border-top: 2px solid $primary-color;
+    opacity: 0;
+    @include transition(0.2s);
+    background: rgba(255, 255, 255, 0.98);
+    li {
+        display: block;
+        a {
+            padding: 10px 20px;
+            display: block;
+            color: $second-color;
+            font-size: 12px;
+            font-family: $font-default;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin: 0;
+        }
+        a:hover {
+            color: $primary-color;
+        }
+    }
+}
+
+.form-search {
+    position: absolute;
+    top: 0;
+    bottom: 1px;
+    right: 0;
+    width: 0px;
+    overflow: hidden;
+    background: #fff;
+    padding: 13px 0;
+    @include transition(0.33s);
+    input[type="search"] {
+        @extend .paragraph;
+        margin: 0;
+        color: $second-color;
+        padding: 18px 20px;
+        border: none;
+        width: 100%;
+        outline: none;
+        background: transparent;
+        font-family: $font-default;
+        font-weight: 600;
+        color: $title-color;
+        @include transition(0.2s);
+    }
+    input[type="search"]::-webkit-input-placeholder {
+      color: $title-color;
+    }
+    input[type="search"]::-moz-placeholder {
+      color: $title-color;
+    }
+    input[type="search"]:-ms-input-placeholder {
+      color: $title-color;
+    }
+    input[type="search"]:-moz-placeholder {
+      color: $title-color;
+    }
+    button {
+        background: transparent;
+        border: none;
+        float: right;
+        margin-top: -38px;
+        margin-right: 3px;
+        position: relative;
+        z-index: 2;
+        outline: none;
+    }
+    button i {
+        color: $second-color;
+        font-size: 18px;
+    }
+}
+
+.form-search.active {
+    width: 630px;
+    padding: 14px;
+    margin-bottom: -1px;
+    background: $primary-color;
+}
+
+

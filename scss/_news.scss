@@ -1,0 +1,257 @@
+
+/*------------------------------------------------- */
+/* =  News section */
+/*------------------------------------------------- */
+
+section.news-section {
+	padding: 100px 0;
+    background: #f7f7f7;
+	.news-box {
+		margin-left: -15px;
+		margin-right: -15px;
+		.item {
+			padding: 0 15px;
+		}
+		.blog-post {
+			margin-bottom: 30px;
+            img {
+				width: 100%;
+				height: auto;
+				margin-bottom: 25px;
+			}
+			h2 {
+				font-weight: 600;
+				a {
+					color: $title-color;
+				}
+				a:hover {
+					color: $primary-color;
+				}
+			}
+			ul.post-meta {
+				@extend .reset-elem;
+				margin-bottom: 15px;
+				li {
+					display: inline-block;
+					font-size: 13px;
+					font-family: $font-default2;
+					color: #888;
+					margin-bottom: 0;
+					margin-right: 4px;
+					a {
+						color: #757575;
+					}
+					a:hover {
+						color: $primary-color;
+					}
+				}
+				li:before {
+					content: '/';
+					font-family: $font-default2;
+					font-size: 11px;
+					margin-right: 4px;
+				}
+				li:first-child:before {
+					content: '';
+					display: none;
+					margin-right: 0;
+				}
+			}
+        }
+        .blog-post.single-post {
+        	h1 {
+        		font-size: 32px;
+        		font-weight: 700;
+        	}
+        	p {
+        		font-size: 16px;
+        		margin-bottom: 30px;
+        		line-height: 30px;
+        		color: #777;
+        	}
+			blockquote {
+				padding: 30px;
+				padding-left: 100px;
+				background: #f7f9fa;
+				@include border-radius(2px);
+				border: 1px solid #e2e7ea;
+				margin-bottom: 25px;
+				position: relative;
+				p {
+					margin: 0;
+					font-style: italic;
+				}
+			}
+			blockquote:before {
+				position: absolute;
+				content: '\f10d';
+				font-size: 24px;
+				font-family: 'FontAwesome';
+				top: 50px;
+				left: 25px;
+				color: $title-color;
+			}
+			.comment-area {
+				h2 {
+					font-size: 22px;
+					margin-bottom: 30px;
+				}
+				ul {
+					@extend .reset-elem;
+					li {
+						list-style: none;
+						.comment-box {
+							overflow: hidden;
+							margin-bottom: 30px;
+							img {
+								width: auto;
+								max-width: 100px;
+								float: left;
+							}
+							.comment-content {
+								margin-left: 130px;
+								h3 {
+									color: $title-color;
+									font-size: 16px;
+									font-family: $font-default;
+									font-weight: 700;
+									text-transform: uppercase;
+									margin: 0 0 -3px;
+									a {
+										color: $second-color;
+										float: right;
+										font-size: 12px;
+									}
+									a:hover {
+										color: $primary-color;
+									}
+								}
+								span {
+									@extend .paragraph;
+									font-size: 12px;
+									display: inline-block;
+									font-weight: 400;
+									margin-bottom: 5px;
+									text-transform: uppercase;
+								}
+								p {
+									font-size: 15px;
+									margin: 0 !important;
+								}
+							}
+						}
+					}
+				}
+				ul.depth {
+					.comment-box {
+						padding-left: 130px;
+					}
+				}
+			}
+			.contact-form-box {
+				h2 {
+					font-size: 22px;
+					margin-bottom: 0;
+				}
+				span {
+					display: inline-block;
+					@extend .paragraph;
+					color: red;
+					margin-bottom: 30px;
+				}
+			}
+        }
+		.prev-next {
+			a {
+				@extend .paragraph;
+				font-weight: 600;
+				i {
+					margin-right: 10px;
+				}
+			}
+			a:hover {
+				color: $second-color;
+			}
+			a.next {
+				float: right;
+				i {
+					margin-right: 0;
+					margin-left: 10px;
+				}
+			}
+		}
+	}
+
+}
+
+.sidebar {
+	padding-left: 60px;
+	.sidebar-widget {
+		margin-bottom: 40px;
+		> h2 {
+			padding-bottom: 15px;
+			margin-bottom: 15px;
+			position: relative;
+			font-weight: 600;
+		}
+		> h2:after {
+			content: '';
+			width: 30px;
+			height: 1px;
+			left: 0;
+			bottom: 0;
+			position: absolute;
+			background: $primary-color;
+		}
+		ul.categories-list {
+			@extend .reset-elem;
+			padding-left: 15px;
+			li {
+				padding-left: 4px;
+				a {
+					@extend .paragraph;
+					margin-bottom: 0;
+				}
+				a:hover {
+					color: $primary-color;
+				}
+			}
+		}
+		ul.popular-list {
+			@extend .reset-elem;
+			padding-top: 8px;
+			li {
+				display: block;
+				overflow: hidden;
+				margin-bottom: 30px;
+				img {
+					max-width: 70px;
+					height: auto;
+					float: left;
+					@include border-radius(4px);
+				}
+				.post-content {
+					margin-left: 100px;
+				}
+				h2 {
+					font-size: 15px;
+					line-height: 20px;
+					margin: 0 0 5px;
+					font-weight: 600;
+					a {
+						color: $title-color;
+					}
+					a:hover {
+						color: $primary-color;
+					}
+				}
+				span {
+					@extend .paragraph;
+					font-size: 14px;
+					margin: 0;
+					line-height: 20px;
+				}
+			}
+		}
+	}
+}

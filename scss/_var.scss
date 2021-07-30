@@ -1,0 +1,162 @@
+
+/* import google fonts */
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i|Poppins:300,400,500,600,700|Raleway:200,300,400,500,600,700,800');
+
+//the default font in our template
+$font-default: 'Raleway', sans-serif;
+
+//the second default font in our template
+$font-default2: 'Poppins', sans-serif;
+
+//the second font in our template
+$font-alternative: 'Droid Serif', serif;
+
+//default color skin
+$primary-color: #F7DC6F;
+
+//default color skin2
+$second-color: #1B4F72;
+
+//text color 1 (some titles)
+$title-color: #333333;
+
+//text color 1 (some titles)
+$text-color: #888888;
+
+//reset element paddings and margins
+
+.reset-elem {
+    margin: 0;
+    padding: 0;
+}
+
+//default style for paragraphs in this template
+.paragraph {
+    font-size: 14px;
+    color: $text-color;
+    font-family: $font-default;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 0 0 10px;
+}
+
+//default style for hading1 in this template
+.heading1 {
+    color: $title-color;
+    font-size: 48px;
+    font-family: $font-default;
+    font-weight: 800;
+    line-height: 44px;
+    margin: 0 0 20px;
+}
+
+//default style for hading2 in this template
+.heading2 {
+    color: $title-color;
+    font-size: 20px;
+    font-family: $font-default;
+    font-weight: 700;
+    margin: 0 0 10px;
+    line-height: 26px;
+}
+
+//default style for hading2 in this template
+.heading3 {
+    color: $title-color;
+    font-size: 16px;
+    font-family: $font-default;
+    font-weight: 700;
+    margin: 0 0 4px;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+//variable for radius corners
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+//variable for radius corners
+@mixin border-bottom-left-radius($radius) {
+    -webkit-border-bottom-left-radius: $radius;
+    -moz-border-bottom-left-radius: $radius;
+    -o-border-bottom-left-radius: $radius;
+    border-bottom-left-radius: $radius;
+}
+
+//variable for radius corners
+@mixin border-bottom-right-radius($radius) {
+    -webkit-border-bottom-right-radius: $radius;
+    -moz-border-bottom-right-radius: $radius;
+    -o-border-bottom-right-radius: $radius;
+    border-bottom-right-radius: $radius;
+}
+
+//variable for radius corners
+@mixin border-top-left-radius($radius) {
+    -webkit-border-top-left-radius: $radius;
+    -moz-border-top-left-radius: $radius;
+    -o-border-top-left-radius: $radius;
+    border-top-left-radius: $radius;
+}
+
+//variable for radius corners
+@mixin border-top-right-radius($radius) {
+    -webkit-border-top-right-radius: $radius;
+    -moz-border-top-right-radius: $radius;
+    -o-border-top-right-radius: $radius;
+    border-top-right-radius: $radius;
+}
+
+//variable for transitions
+@mixin transition($speed) {
+    transition: all $speed ease-in-out;
+    -moz-transition: all $speed ease-in-out;
+    -webkit-transition: all $speed ease-in-out;
+    -o-transition: all $speed ease-in-out;
+}
+
+//variable for tranform grow elem scale
+@mixin transform($scale) {
+    transform: scale($scale);
+    -webkit-transform: scale($scale);
+    -moz-transform: scale($scale);
+    -o-transform: scale($scale);
+}
+
+//box shadow  variable
+@mixin box-shadow($val) {
+    box-shadow: $val;
+    -webkit-box-shadow: $val;
+    -moz-box-shadow: $val;
+    -o-box-shadow: $val;
+}
+
+//animate transform rotate variable
+@mixin rotate($rotate) {
+    -webkit-transform: rotate($rotate);
+    -moz-transform: rotate($rotate);
+    -ms-transform: rotate($rotate);
+    -o-transform: rotate($rotate);
+    transform: rotate($rotate);
+}
+
+//background size cover
+.back-cover {
+    background-size: cover !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+}
+
+//default style for anchors in this template
+.anchor {
+    display: inline-block;
+    text-decoration: none !important;
+
+    @include transition(0.2s);
+}
+

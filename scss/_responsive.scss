@@ -1,0 +1,139 @@
+
+/*-------------------------------------------------*/
+/* =  Responsive Part
+/*-------------------------------------------------*/
+
+@media (max-width: 1600px) {
+	section.about-section .about-box .inner-box .about-us-post {
+		padding: 20px 10px;
+	}
+}
+
+@media (max-width: 1199px) {
+
+	section.portfolio-section .portfolio-box.iso-call .project-post {
+		width: 293px;
+	}
+	section.page-banner-section h1 {
+		font-size: 30px;
+		line-height: 40px;
+	}
+	section.page-banner-section p {
+		font-size: 13px;
+	}
+	section.about-section .image-holder {
+		display: none;
+	}
+	section.about-section {
+		padding: 100px 0;
+	}
+	section.about-section .about-box {
+		width: 100%;
+	}
+	section.about-section .about-box .inner-box {
+		padding: 0;
+		max-width: 720px;
+		margin: 0 auto;
+	}
+	#map {
+		height: 350px;
+	}
+}
+
+@media (max-width: 991px) {
+	.navbar-nav > li > a {
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+	section.portfolio-section .portfolio-box .project-post {
+		width: 33.333333%;
+	}
+	.sidebar {
+		padding-left: 0;
+		padding-top: 60px;
+	}
+	section.portfolio-section .portfolio-box.iso-call .project-post {
+		width: 345px;
+	}
+	section.contact-section #contact-form {
+		margin-bottom: 50px;
+	}
+	.single-page-section img {
+		padding-right: 0;
+	}
+	#map {
+		height: 300px;
+	}
+}
+
+@media (max-width: 767px) {
+	.top-line {
+		display: none;
+	}
+	.navbar-brand {
+		padding: 30px 15px 22px;
+	}
+	.navbar-default .navbar-collapse {
+		background: #fff;
+	}
+	.navbar-toggle {
+		margin-top: 20px;
+	}
+	.navbar-nav > li > a {
+		padding: 6px 15px;
+		color: $title-color !important;
+	}
+	.navbar-nav > li > a.open-search {
+		display: none;
+	}
+	.navbar-nav > li > a:hover,
+	.navbar-nav > li > a.active {
+		color: $primary-color !important;
+	}
+	.navbar-nav > li > a:after {
+		display: none !important;
+	}
+	section.about-section .about-box .inner-box {
+		padding: 0 15px;
+		max-width: 100%;
+	}
+	section.page-banner-section {
+		margin-top: 77px;
+	}
+	section.news-section .news-box .blog-post.single-post .comment-area ul.depth .comment-box {
+		padding-left: 0;
+	}
+	section.portfolio-section .portfolio-box .project-post {
+		width: 50%;
+	}
+	.tparrows {
+		display: none !important;
+	}
+	#home-section .tp-caption.Concept-Title {
+		letter-spacing: 0px !important;
+	}
+	section.portfolio-section .portfolio-box.iso-call .project-post {
+		width: 100%;
+		margin: 15px 0;
+	}
+	section.portfolio-section .portfolio-box.iso-call,
+	section.news-section .news-box {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	ul.depth {
+		padding-left: 0;
+	}
+	#map {
+		height: 250px;
+	}
+}
+
+@media (max-width: 500px) {
+	section.portfolio-section .portfolio-box .project-post {
+		width: 100%;
+	}
+	#map {
+		height: 200px;
+	}
+}

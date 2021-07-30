@@ -1,0 +1,69 @@
+
+/*------------------------------------------------- */
+/* =  testimonial section
+/*------------------------------------------------- */
+
+section.testimonial-section {
+	padding: 100px 0;
+	background: $second-color;
+	.testimonial-box {
+		max-width: 780px;
+		margin: 0 auto;
+		.item {
+			margin: 0 15px;
+		}
+		.testimonial-post {
+			overflow: hidden;
+			i {
+				float: left;
+				display: inline-block;
+				width: 100px;
+				height: 100px;
+				color: $title-color;
+				font-size: 22px;
+				background: $primary-color;
+				line-height: 100px;
+				text-align: center;
+				@include border-radius(50%);
+			}
+			.test-content {
+				margin-left: 140px;
+			}
+			p {
+				font-family: $font-alternative;
+				font-style: italic;
+				margin-bottom: 15px;
+				font-size: 16px;
+				margin-top: 8px;
+				width: 100%;
+				color: #fff;
+				@include transition(0.2s);
+			}
+			h3 {
+				color: #fff;
+				margin-bottom: -6px;
+			}
+		}
+	}
+	.owl-theme .owl-controls {
+		display: none !important;
+	}
+}
+
+.owl-theme .owl-controls {
+	margin-top: 20px;
+}
+.owl-theme .owl-controls .owl-buttons {
+	display: none;
+}
+.owl-theme .owl-controls .owl-page span {
+	background: #aaa;
+	border-color: transparent;
+	width: 30px;
+	height: 2px;
+	@include border-radius(0);
+}
+.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {
+	background: $primary-color;
+	border-color: transparent;
+}

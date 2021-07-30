@@ -1,0 +1,260 @@
+
+ 
+/*-------------------------------------------------- */
+/* 1. Isotope filtering */
+/*------------------------------------------------- */
+.isotope-item {
+    z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+}
+
+.isotope, .isotope .isotope-item {
+    // change duration value to whatever you like
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+
+.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    transition-property: height, width;
+}
+
+.isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    transition-property: transform, opacity;
+}
+
+/*-----------------------------------------------------------------------------
+ *
+ *KENBURNER RESPONSIVE BASIC STYLES OF HTML DOCUMENT
+ *
+ *Screen Stylesheet
+ *
+ *version:    1.0
+ *date:       07/27/11
+ *author:     themepunch
+ *email:      support@themepunch.com
+ *website:    http://www.themepunch.com */
+/*----------------------------------------------------------------------------- */
+
+.boxedcontainer {
+    max-width: 1170px;
+    margin: auto;
+    padding: 0px 30px;
+}
+
+/*********************************************
+ *    -   SETTINGS FOR BANNER CONTAINERS  -
+ ********************************************* */
+
+.tp-banner-container {
+    width: 100%;
+    position: relative;
+    padding: 0;
+}
+
+.tp-banner {
+    width: 100%;
+    position: relative;
+}
+
+.tp-banner-fullscreen-container {
+    width: 100%;
+    position: relative;
+    padding: 0;
+}
+
+/*------------------------------------------------- */
+/* =  General */
+/*------------------------------------------------- */
+
+p {
+    @extend .paragraph;
+}
+
+h1 {
+    @extend .heading1;
+}
+
+h2 {
+    @extend .heading2;
+}
+
+h3 {
+    @extend .heading3;
+}
+
+a {
+    @extend .anchor;
+}
+
+
+.title-section {
+    text-align: center;
+    margin-bottom: 60px;
+    position: relative;
+    h1 {
+        position: relative;
+        padding-bottom: 25px;
+        margin-bottom: 25px;
+    }
+    h1:after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 50%;
+        margin-left: -15px;
+        width: 30px;
+        height: 3px;
+        background: $primary-color;
+    }
+    p {
+        max-width: 770px;
+        margin: 0 auto;
+        color: #999;
+        line-height: 24px;
+        font-size: 16px;
+        font-style: italic;
+        font-family: $font-alternative;
+    }
+}
+
+.title-section.white-style {
+    h1 {
+        color: #ffffff;
+    }
+    p {
+        color: #fff;
+    }
+}
+
+#home-section {
+    overflow: hidden;
+    background: #111111;
+    .tp-caption.Concept-Title {
+        font-size: 70px;
+        font-family: $font-default;
+        font-weight: 800 !important;
+        letter-spacing: -1px !important;
+        text-align: left !important;
+    }
+    .tp-caption.Concept-SubTitle {
+        font-family: $font-default;
+        font-style: normal !important;
+        font-weight: 400 !important;
+        text-align: left !important;
+        font-size: 20px;
+        color: #fff;
+        a {
+            font-style: normal !important;
+            margin-right: 20px !important;
+        }
+        a.button-one {
+            padding: 13px 30px;
+        }
+        a.button-two {
+            background: transparent;
+            border: 2px solid #fff !important;
+            color: #fff;
+        }
+        a.button-two:hover {
+            background: #fff;
+            color: $second-color;
+        }
+    }
+    .persephone .tp-bullet {
+        width: 50px;
+        height: 2px;
+        background: rgba(255, 255, 255, 0.3);
+        border: none;
+    }
+    .persephone .tp-bullet:hover, .persephone .tp-bullet.selected {
+        background: $primary-color;
+    }
+}
+
+a.button-white {
+    color: #fff;
+    font-size: 12px;
+    font-family: $font-default;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    padding: 8px 30px !important;
+    background: transparent;
+    font-weight: 500;
+    @include border-radius(3px);
+    @include transition(0.2s);
+}
+
+a.button-white:hover {
+    color: $title-color;
+    background: #fff;
+}
+
+a.button-one {
+    color: #000;
+    font-size: 13px;
+    font-family: $font-default;
+    text-transform: uppercase;
+    padding: 12px 30px;
+    background: $primary-color;
+    font-weight: 700;
+    @include border-radius(3px);
+    @include transition(0.2s);
+    margin: 0;
+}
+
+a.button-one:hover {
+    color: #fff;
+    background: $title-color;
+}
+
+.center-button {
+    text-align: center;
+}
+
+a.button-two {
+    color: #fff;
+    font-size: 13px;
+    font-family: $font-default;
+    font-weight: 700;
+    padding: 12px 30px;
+    background: $second-color;
+    text-transform: uppercase;
+    @include border-radius(3px);
+}
+a.button-two:hover {
+    background: $primary-color;
+    color: $title-color;
+}
+
+button.mfp-close, button.mfp-arrow, a.zoom {
+    outline: none;
+}
+
+section.page-banner-section {
+    padding: 100px 0;
+    margin-top: 155px;
+    text-align: center;
+    @include retina('../upload/ban2.jpg', 2, cover, center top no-repeat);
+    h1 {
+        font-size: 48px;
+        line-height: 60px;
+        font-weight: 900;
+        color: #ffffff;
+        margin-bottom: 0px;
+    }
+    p {
+        color: #fff;
+        font-weight: 500;
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+}
